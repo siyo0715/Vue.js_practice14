@@ -10,7 +10,12 @@
 </head>
 <body>
     <div id="app">
+      <ul>
         <li v-for="(fruits, i) in fruits">({{i}}){{fruits}}</li>
+      </ul>
+      <ul>
+          <li v-for="value in object">{{value}}</li>
+      </ul>
     </div>
     <script src="main.js"></script>
 </body>
