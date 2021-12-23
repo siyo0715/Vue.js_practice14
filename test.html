@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <div v-for="fruit in fruits" :key="fruit">
+                <p>{{fruit}}</p>
+                <input type="text">
+            </div>
+        </ul>
+        <button @click="remove">先頭を削除</button>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
+
+
+<!-- Key属性を使うときはtemplateが使えない -->
+<!-- v-forの時はkey属性を使う -->
